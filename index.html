@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Zoya 💗</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(145deg,#ffc4df,#ffe5f1,#f9b5d5);
+  font-family: 'Poppins', sans-serif;
+  color: #873d65;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+.heart {
+  position: fixed;
+  bottom: -30px;
+  pointer-events: none;
+  animation: floatUp linear forwards;
+  z-index: 0;
+}
+
+@keyframes floatUp {
+  to {
+    transform: translateY(-110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  width: 90%;
+  max-width: 500px;
+  margin: 45px auto;
+  padding: 30px 20px;
+}
+
+.small {
+  letter-spacing: 4px;
+  font-size: 11px;
+  color: #a04b75;
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 75px;
+  color: #d63384;
+  margin: 12px 0;
+  text-shadow: 2px 3px 8px #ffffff;
+}
+
+.subtitle {
+  font-size: 14px;
+  margin-bottom: 35px;
+}
+
+.envelope {
+  font-size: 90px;
+  margin: 25px;
+  cursor: pointer;
+  display: inline-block;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  50% { transform: translateY(-12px) rotate(5deg); }
+}
+
+button {
+  background: linear-gradient(120deg,#e7549b,#ff8fbd);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 14px 27px;
+  font-family: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px #d85b9760;
+  transition: .3s;
+}
+
+button:hover {
+  transform: scale(1.06);
+}
+
+#surprise {
+  display: none;
+  animation: appear 1.2s ease;
+}
+
+@keyframes appear {
+  from {opacity:0; transform:translateY(25px);}
+  to {opacity:1; transform:translateY(0);}
+}
+
+.message {
+  background: #fff3fa;
+  padding: 25px 19px;
+  border-radius: 25px;
+  margin-top: 25px;
+  line-height: 1.9;
+  font-size: 14px;
+  box-shadow: 0 8px 25px #c64c8a25;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+.progressive {
+  font-size: 16px;
+  font-weight: 500;
+  color: #d63384;
+  line-height: 2;
+  margin: 20px 0;
+}
+
+.line {
+  opacity: 0;
+  animation: appear .5s forwards;
+}
+
+.signature {
+  font-family: 'Great Vibes', cursive;
+  font-size: 39px;
+  color: #d63384;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer {
+  margin-top: 35px;
+  font-size: 12px;
+  color: #a34e77;
+}
+
+.hidden {
+  display: none;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <p class="small">A LITTLE SOMETHING FOR SOMEONE SPECIAL ✨</p>
+
+  <h1>Zoyaaaa</h1>
+
+  <p class="subtitle">
+    My sister by heart, my bestie by choice 🎀
+  </p>
+
+  <div id="intro">
+    <div class="envelope" onclick="openGift()">💌</div>
+    <p style="margin-bottom:20px;">
+      Someone has a little surprise for you...
+    </p>
+    <button onclick="openGift()">OPEN YOUR SURPRISE 💗</button>
+  </div>
+
+  <div id="surprise">
+
+    <h2 style="font-size:21px;">For my Zoya 🌷</h2>
+
+    <div class="progressive" id="typing"></div>
+
+    <div class="message">
+
+      <p style="text-align:center;font-size:23px;">
+        🌸 💗 🦋 🌷
+      </p>
+
+      <p>
+        Dear Zoya,
+      </p>
+
+      <p>
+        You're not just a friend, you're family I got to choose. 🥹
+        You're my sister from another mother, my unpaid therapist,
+        my partner in crime, my personal headache and my forever bestie. 😭😂
+      </p>
+
+      <p>
+        I don't know how to explain how special you are to me.
+        Some people enter our lives as strangers and slowly become
+        a part of our hearts. You're one of those people. 💗
+      </p>
+
+      <p>
+        Thank you for every laugh, every silly conversation,
+        every little moment and for being YOU.
+      </p>
+
+      <p>
+        No matter how busy life gets, I hope we never lose this
+        bond. I want us to grow together, make countless memories
+        and stay sisters even when we're old and annoying. 😭🫂
+      </p>
+
+      <p>
+        You're my sister, my best friend and one of my favourite
+        humans. Never doubt your importance in my life. 🌷
+      </p>
+
+      <p style="text-align:center;">
+        LOVE YOU ENDLESSLYYYYY!! 💋💗
+      </p>
+
+      <div class="signature">
+        Your forever bestie ♡
+      </div>
+
+    </div>
+
+    <br>
+
+    <button onclick="finalSurprise()">
+      ONE MORE THING... 🥺
+    </button>
+
+    <div id="last" class="hidden" style="margin-top:30px;">
+      <h1 style="font-size:48px;">I LOVE YOU ZOYA!</h1>
+      <p style="font-size:17px;line-height:2;">
+        🌷 My sister. 💗 My safe place. 🦋 My forever person.
+        <br>
+        Here's to a lifetime of friendship and madness! 😭🎀
+      </p>
+      <p style="font-size:40px;margin-top:20px;">
+        💗 🫂 🌸 🥹 🎀
+      </p>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    MADE WITH LOTS OF LOVE 💗 JUST FOR ZOYA
+  </div>
+
+</div>
+
+<script>
+
+function openGift() {
+  document.getElementById("intro").style.display = "none";
+  document.getElementById("surprise").style.display = "block";
+
+  const words = [
+    "Z 💗",
+    "Zo 🎀",
+    "Zoy 🦋",
+    "Zoya 🌷",
+    "Zoya I 🫶🏻",
+    "Zoya I l 💗",
+    "Zoya I lo 🥹",
+    "Zoya I lov 🫂",
+    "Zoya I love 💕",
+    "Zoya I love y 🥺",
+    "Zoya I love yo 💗",
+    "Zoya I love you 🫶🏻",
+    "Zoya I love you s 🌸",
+    "Zoya I love you so 🥹",
+    "Zoya I love you so m 💞",
+    "Zoya I love you so mu 🫂",
+    "Zoya I love you so muc 🎀",
+    "Zoya I love you so muchhh 😭💗"
+  ];
+
+  let i = 0;
+
+  function showWord() {
+    if(i < words.length) {
+      let p = document.createElement("div");
+      p.className = "line";
+      p.textContent = words[i];
+      document.getElementById("typing").appendChild(p);
+      i++;
+      setTimeout(showWord, 350);
+    }
+  }
+
+  showWord();
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+
+function finalSurprise() {
+  document.getElementById("last").style.display = "block";
+
+  for(let i=0;i<35;i++) {
+    setTimeout(createHeart, i*80);
+  }
+
+  window.scrollTo({
+    top:document.body.scrollHeight,
+    behavior:"smooth"
+  });
+}
+
+function createHeart() {
+  const h = document.createElement("div");
+  h.className = "heart";
+  h.textContent = ["💗","💕","🌸","🎀","🦋","🌷"][Math.floor(Math.random()*6)];
+  h.style.left = Math.random()*100+"vw";
+  h.style.fontSize = (15+Math.random()*22)+"px";
+  h.style.animationDuration = (4+Math.random()*5)+"s";
+  document.body.appendChild(h);
+
+  setTimeout(()=>h.remove(),9000);
+}
+
+setInterval(createHeart,700);
+
+</script>
+
+</body>
+</html>
